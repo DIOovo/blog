@@ -1,0 +1,4 @@
+com\gaoheyang\controller\LinkController.class
+com\gaoheyang\controller\BlogLoginController.class
+com\gaoheyang\config\SecurityConfig.class
+com\gaoheyang\controller\CategoryController.class
