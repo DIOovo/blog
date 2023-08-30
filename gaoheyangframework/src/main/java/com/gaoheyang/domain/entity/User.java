@@ -3,6 +3,8 @@ package com.gaoheyang.domain.entity;
 import java.util.Date;
 
 import java.io.Serializable;
+
+import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,6 +16,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
  * @author makejava
  * @since 2023-08-24 20:28:41
  */
+
 @SuppressWarnings("serial")
 @Data
 @AllArgsConstructor
@@ -53,6 +56,8 @@ public class User  {
     private Integer delFlag;
 
 
+    //关联角色id数组，非user表字段
+    @TableField(exist = false)
+    private Long[] roleIds;
 
 }
-
